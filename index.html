@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    
+    <!-- main container -->
+    <div id="container">
+        <!-- calculator body -->
+        <div class="calculator-body">
+            
+            <input id="output">
+            
+            <!-- buttons -->
+            <div class="c-buttons">
+                <!-- row1 -->
+                <div class="r1">
+                    <button onclick="display(7)" id="seven">7</button>
+                    <button onclick="display(8)" id="eight">8</button>
+                    <button onclick="display(9)" id="nine">9</button>
+                    <button onclick="display('/')" id="divide">/</button>
+                </div>
+                <!-- row2 -->
+                <div class="r2">
+                    <button onclick="display(4)" id="four">4</button>
+                    <button onclick="display(5)" id="five">5</button>
+                    <button onclick="display(6)" id="six">6</button>
+                    <button onclick="display('*')" id="multiply">x</button>
+                </div>
+                <!-- row3 -->
+                <div class="r3">
+                    <button onclick="display(1)" id="one">1</button>
+                    <button onclick="display(2)" id="two">2</button>
+                    <button onclick="display(3)" id="three">3</button>
+                    <button onclick="display('+')" id="plus">+</button>
+                </div>
+                <!-- row4 -->
+                <div class="r4">
+                    <button onclick="display(0)" id="zero">0</button>
+                    <button onclick="display('.')">.</button>
+                    <button onclick="evaluateExp()" id="equal">=</button>
+                    <button onclick="display('-')" id="minus">-</button>
+                </div>
+                <!-- row5 -->
+                <div class="r5">
+                    <input type="button" onclick="removeLast()" id="delete" value="DEL">
+                    <input type="button" onclick="clearAll()" id="clear" value="CLR">
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="cal.js"></script>
+</html>
